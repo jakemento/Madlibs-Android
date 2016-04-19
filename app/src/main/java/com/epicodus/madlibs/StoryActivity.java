@@ -20,8 +20,9 @@ public class StoryActivity extends AppCompatActivity {
         String Noun2 = intent.getStringExtra("Noun2");
         String Verb1 = intent.getStringExtra("Verb1");
         String Verb2 = intent.getStringExtra("Verb2");
+        String Adjective1 = intent.getStringExtra("Adjective1");
 
-        mStory.setText("There once was a " + Noun1 +" from Portland. He fancied himself a " + Noun2 + ". One day he went out " + Verb1 + " and he saw another "+ Noun1 + " . He was " + Verb2 +" to that " + Noun1 + " when, suddenly he felt ill and went home.");
+        mStory.setText("There once was a " + Adjective1 + " " + Noun1 +" from Portland. He fancied himself a " + Noun2 + ". One day he went out " + Verb1 + " and he saw another "+ Noun1 + " . He was " + Verb2 +" to that " + Noun1 + " when, suddenly he felt ill and went home.");
 
     }
 }

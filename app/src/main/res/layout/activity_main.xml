@@ -39,7 +39,8 @@
         android:width="200dp"
         android:layout_below="@+id/textView"
         android:layout_toRightOf="@+id/textView5"
-        android:layout_toEndOf="@+id/textView5" />
+        android:layout_toEndOf="@+id/textView5"
+        android:layout_alignParentEnd="false" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -111,4 +112,23 @@
         android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/Go"
         android:layout_alignStart="@+id/Go" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="adjective"
+        android:id="@+id/textView7"
+        android:layout_alignTop="@+id/Story"
+        android:layout_toLeftOf="@+id/Story"
+        android:layout_toStartOf="@+id/Story" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Adjective1"
+        android:width="200dp"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_toRightOf="@+id/textView7"
+        android:layout_toEndOf="@+id/textView7" />
+
 </RelativeLayout>

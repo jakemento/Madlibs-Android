@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     private EditText mNoun2;
     private EditText mVerb1;
     private EditText mVerb2;
+    private EditText mAdjective1;
+
 
 
     @Override
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         mNoun2 = (EditText) findViewById(R.id.Noun2);
         mVerb1 = (EditText) findViewById(R.id.Verb1);
         mVerb2 = (EditText) findViewById(R.id.Verb2);
+        mAdjective1 = (EditText) findViewById(R.id.Adjective1);
 
 
         mGo = (Button) findViewById(R.id.Go);
@@ -40,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 mNoun2.setText("");
                 mVerb1.setText("");
                 mVerb2.setText("");
+                mAdjective1.setText("");
 
             }
         });
@@ -50,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 String Noun2 = mNoun2.getText().toString();
                 String Verb1 = mVerb1.getText().toString();
                 String Verb2 = mVerb2.getText().toString();
+                String Adjective1 = mAdjective1.getText().toString();
                 Log.d(TAG, Noun1);
 
 
@@ -58,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("Noun2", Noun2);
                 intent.putExtra("Verb1", Verb1);
                 intent.putExtra("Verb2", Verb2);
+                intent.putExtra("Adjective1", Adjective1);
                 startActivity(intent);
 
 
